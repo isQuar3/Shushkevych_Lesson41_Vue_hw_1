@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shushkevych Vue_hw1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main-block">
+        <div id="app">
+            <div id="wrapper">
+                <h1 id="header">Изменить цвет заднего плана?</h1>
+                <input id="input" type="text" v-model="userColor" placeholder="Введите цвет (имя, hex или rgba)">
+                <button v-on:click="changecolor">Изменить цвет</button>
+                <!-- <button v-on:click="restorecolor">Сбросить цвет фона</button> -->
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
