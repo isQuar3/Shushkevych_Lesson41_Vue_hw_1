@@ -13,6 +13,9 @@ window.onload = function () {
                 document.getElementById("result").innerText = `Ваш цвет фона теперь "${this.color.toUpperCase()}"`;
                 document.getElementById("wrapper").style.backgroundColor = "white";
                 this.userColor = '';
+            },
+            restorecolor: function () {
+                document.getElementById("main-block").style.backgroundColor = "white";
             }
         }
     });
