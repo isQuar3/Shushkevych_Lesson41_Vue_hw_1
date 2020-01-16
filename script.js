@@ -16,6 +16,7 @@ window.onload = function () {
             },
             restorecolor: function () {
                 document.getElementById("main-block").style.backgroundColor = "white";
+                document.getElementById("result").innerText = '';
             }
         }
     });
